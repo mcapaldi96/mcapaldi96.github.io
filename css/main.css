@@ -1,0 +1,319 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-primary: #e62272;
+    --clr-light: #fff;
+}
+.enter{
+    justify-self: center;
+    padding: 0;
+    width: 100%;
+    padding-top: 15%;
+}
+.enter_item{
+    display: grid;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: var(--clr-light);
+    font-size: large;
+    font-family: "Chapaza";
+    font-style: italic;
+    
+
+}
+
+.enter_link{
+    justify-items: auto;
+    color: var(--clr-primary);
+    text-transform: uppercase;
+    font-size: x-large;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.enter_item a:hover{
+    color: var(--clr-light);
+    text-decoration: none;
+}
+header{
+    display: grid;
+    justify-content: center;
+}
+
+.responsive{            /*This makes the image to expand and shrink for different device screen size*/
+    max-width: 500px;
+    min-width: 10px;
+    height: auto;
+    width: 100%;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+body{
+    background-image: url(/Portfolio/mcapaldi96.github.io/images/Background72.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+nav{
+    display: grid;
+    padding-bottom: 2em;
+}
+
+.nav_list{
+    display: grid;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    align-items: center;
+    padding: 0;
+    
+}
+
+.nav_link{
+    color: var(--clr-primary);
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: var(--clr-light);
+    text-decoration: none;
+    
+}
+
+.project_container{
+    display: grid;
+    justify-items: center;
+    margin-top: 3em;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "project_1"
+    "project_1_img"
+    "project_1_info"
+    "project_2"
+    "project_2_img"
+    "project_2_info"
+    "project_3"
+    "project_3_img"
+    "project_3_info"
+    "project_4"
+    "project_4_img"
+    "project_4_info";
+}
+
+.project_container a:hover{
+    color: var(--clr-light);
+    text-decoration: none;
+}
+
+.project_link{
+    justify-items: auto;
+    color: var(--clr-primary);
+    font-size: large;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: "Chapaza";
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+   
+.proj_img{
+    max-width: 600px;
+    min-width: 10px;
+    height: auto;
+    width: 100%;
+    }
+
+
+.project_1_info, .project_2_info, .project_3_info,.project_4_info{
+    color: var(--clr-light);
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+.wrapper{
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px black;
+    text-align: center;
+    
+}
+.wrapper h2{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.contact_container{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-areas:
+    "logo info_link"
+    "logo info_link"
+    "logo info_link";
+    column-gap: 1em;
+    row-gap: 1em;
+    align-items: center;
+    
+}
+.logo{
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 4em;
+}
+
+.info_link{
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+}
+
+.info_link a:hover{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.proj_img_3{
+    display: grid;
+    background-color: white;
+    justify-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    row-gap: 1em;
+    margin-top: 3em;
+    margin-left: 5em;
+    margin-right: 5em;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+   "proj_img_3";
+}
+
+.img_3{
+    max-width: 100%;
+}
+
+.proj_text{
+    margin-top: 3em;
+    text-align: center;
+    padding-bottom: 15em;
+}
+.text{
+    color: var(--clr-light);
+    font-size: x-large;
+}
+
+.proj_text{
+    padding: 5em;
+}
+
+.text{
+    padding-bottom: 1em;
+}
+
+.about_container{
+    margin: 10em;
+}
+.about_text{
+    color: var(--clr-light);
+    font-size: large;
+    padding-bottom: 2em;
+}
+
+.header_section{
+    color: var(--clr-light);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+@media screen and (min-width:750px){
+    .project_container{
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr ;
+  grid-template-rows: 0.15fr 1fr 0.15fr 1fr 0.15fr 1fr 0.15fr 1fr;
+  margin-bottom: 2em;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 1rem;
+  }
+
+.project_1, .project_2, .project_3, .project_4{
+    grid-column: 1 / span 2;
+    justify-self: left;
+    margin-left: 5em;
+    font-size: xx-large;
+    font-family: "Chapaza";
+}
+
+
+.project_link{
+    justify-items: auto;
+    color: var(--clr-primary);
+    font-size: x-large;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.project_container a:hover{
+    color: var(--clr-light);
+    text-decoration: none;
+}
+
+.proj_img{
+    width: 600;
+    height: 500;
+    margin-left: 2em;
+    margin-right: 5em;
+    margin-bottom: 5em;
+    margin-top: none;
+}
+
+.project_1_info, .project_2_info, .project_3_info,.project_4_info{ 
+    color: var(--clr-light);
+    padding: 1em;
+    text-align: center;
+    font-size: 2rem;
+    
+}   
+}
+
+
+
+
+
+
